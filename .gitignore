@@ -1,0 +1,28 @@
+# Node Specific Files
+/node_modules
+/npm-debug.log
+.npmrc
+
+dist
+docs
+test/test-pages/**/common/
+test/test-pages/*/*sdk-sample.*s*
+test/test-pages/*/index.html
+!test/test-pages/gcba/index.html
+!test/test-pages/auto-call-test/index.html
+!test/test-pages/common/
+
+*.tgz
+.ignore
+
+## vscode specific files
+/.vscode
+
+## webstorm specific files
+/.idea
+
+# tap specific files
+/.nyc_output
+/coverage
+
+/.npmrc
