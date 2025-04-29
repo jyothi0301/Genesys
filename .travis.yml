@@ -1,0 +1,23 @@
+---
+language: node_js
+node_js:
+  - 12
+  - 14
+
+sudo: false
+
+cache:
+  directories:
+    - node_modules
+
+matrix:
+  fast_finish: true
+
+before_install: if [[ `npm -v` != 6* ]]; then npm i -g npm@6; fi
+
+install:
+  - npm install
+
+script:
+  - npm test
+  - npm run codecov
